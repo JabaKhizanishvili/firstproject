@@ -7,7 +7,12 @@ s.onclick = function(){
     if(bmi < 24 && bmi > 18){
         r.innerHTML = "არ ხარ მსუქანი"
         r.style.color = 'green'
-    } else if(bmi > 24){
+    } 
+    else if(w.value == "" || h.value == ""){
+        r.innerHTML = "შეავსეთ ყველა მონაცემი!";
+        r.style.color = "red"
+    }
+    else if(bmi > 24){
         r.innerHTML = "სუქანი ხარ "
         r.style.color = 'red';
         var img = document.createElement("img");
