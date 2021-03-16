@@ -22,10 +22,7 @@ s.onclick = function(){
         img.style.width = "30%";
         r.appendChild(img);
     } 
-    
-    else if( bmi < 18 && bmi > 0){
-        r.innerHTML = 'რაღაც ანომალიასთან გვაქ საქმე';
-    }
+  
     if(w.value == "" || h.value == ""){
         r.innerHTML = "შეავსეთ ყველა მონაცემი!";
         r.style.color = "red"
