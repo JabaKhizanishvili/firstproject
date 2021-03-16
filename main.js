@@ -16,7 +16,7 @@ s.onclick = function(){
         r.innerHTML = "სუქანი ხარ "
         r.style.color = 'red';
         var img = document.createElement("img");
-        img.src = "images/fat.jpg";
+        img.src = "images/yle.jpg";
         img.style.width = "30%";
         r.appendChild(img);
     } else{
