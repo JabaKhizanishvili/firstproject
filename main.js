@@ -8,19 +8,27 @@ s.onclick = function(){
         r.innerHTML = "არ ხარ მსუქანი"
         r.style.color = 'green'
     } 
-    else if(w.value == "" || h.value == ""){
-        r.innerHTML = "შეავსეთ ყველა მონაცემი!";
-        r.style.color = "red"
+    else if(h.value <= 70 && h.value > 0 ){
+        r.innerHTML = 'რაღაც ანომალიასთან გვაქ საქმე';
+    }
+    else if(w.value <= 30 && w.value > 0 ){
+        r.innerHTML = 'რაღაც ანომალიასთან გვაქ საქმე';
     }
     else if(bmi > 24){
         r.innerHTML = "სუქანი ხარ "
         r.style.color = 'red';
         var img = document.createElement("img");
-        img.src = "images/yle.jpg";
+        img.src = "images/fat.jpg";
         img.style.width = "30%";
         r.appendChild(img);
-    } else{
+    } 
+    
+    else if( bmi < 18 && bmi > 0){
         r.innerHTML = 'რაღაც ანომალიასთან გვაქ საქმე';
+    }
+    if(w.value == "" || h.value == ""){
+        r.innerHTML = "შეავსეთ ყველა მონაცემი!";
+        r.style.color = "red"
     }
 };
 
